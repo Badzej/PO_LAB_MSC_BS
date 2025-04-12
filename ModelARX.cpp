@@ -10,11 +10,8 @@
 
 
 
-/**TODO:
- * Serializacja,
- * Podział na plik naglowkowy,
- * Komentarze dla Doxygen
- */
+//TODO: Serializacja, Podział na plik naglowkowy, Komentarze dla Doxygen
+
 class Wielomian{
 private:
     std::vector<double> wsp; // współczynniki wielomianu
