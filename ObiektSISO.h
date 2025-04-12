@@ -1,7 +1,6 @@
 class ObiektSISO
 {
     public:
-        ObiektSISO::ObiektSISO();
-        ObiektSISO::~ObiektSISO();
-        double symuluj(double wartoscWejsciowa);
+        virtual ~ObiektSISO() = default;
+        virtual double symuluj(double u) = 0;
 };
