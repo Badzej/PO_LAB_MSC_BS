@@ -164,8 +164,48 @@ void test_ModelARX_skokJednostkowy_3()
 			faktSygWy[i] = instancjaTestowa.symuluj(sygWe[i]);
 
 		// Weryfikacja poprawności i raport:
-		if (porownanieSekwencji(spodzSygWy, faktSygWy))
+		if (porownanieSekwencji(spodzSygWy, faktSygWy)) {
+			instancjaTestowa.serializuj("deserial_test\\t.json"); // Test serializacji do pliku t.json
 			std::cerr << "OK!\n";
+		}
+		else
+		{
+			std::cerr << "FAIL!\n";
+			raportBleduSekwencji(spodzSygWy, faktSygWy);
+		}
+	}
+	catch (...)
+	{
+		std::cerr << "INTERUPTED! (niespodziwany wyjatek)\n";
+	}
+}
+
+void test_ModelARX_student_BS()
+{
+	//Sygnatura testu:
+	std::cerr << "BS ModelARX (-0.4, 0.2 | 0.6, 0.3 | 2 | 0 ) -> test skoku jednostkowego nr 3: ";
+	try {
+		// Przygotowanie danych:
+		ModelARX instancjaTestowa("deserial_test\\t.json");
+		constexpr size_t LICZ_ITER = 30;
+		std::vector<double> sygWe(LICZ_ITER);      // pobudzenie modelu,
+		std::vector<double> spodzSygWy(LICZ_ITER); // spodziewana sekwencja wy
+		std::vector<double> faktSygWy(LICZ_ITER);  // faktyczna sekwencja wy
+
+		// Symulacja skoku jednostkowego w chwili 1. (!!i - daje 1 dla i != 0);
+		for (int i = 0; i < LICZ_ITER; i++)
+			sygWe[i] = !!i;
+		spodzSygWy = { 0, 0, 0, 0.6, 1.14, 1.236, 1.1664, 1.11936, 1.11446, 1.12191, 1.12587, 1.12597, 1.12521, 1.12489, 1.12491, 1.12499, 1.12501, 1.12501, 1.125, 1.125, 1.125, 1.125, 1.125, 1.125, 1.125, 1.125, 1.125, 1.125, 1.125, 1.125 };
+
+		// Symulacja modelu:
+		for (int i = 0; i < LICZ_ITER; i++)
+			faktSygWy[i] = instancjaTestowa.symuluj(sygWe[i]);
+
+		// Weryfikacja poprawności i raport:
+		if (porownanieSekwencji(spodzSygWy, faktSygWy)) {
+			instancjaTestowa.serializuj("deserial_test\\t.json"); // Test serializacji do pliku t.json
+			std::cerr << "OK!\n";
+		}
 		else
 		{
 			std::cerr << "FAIL!\n";
@@ -184,6 +224,7 @@ int main()
 	test_ModelARX_skokJednostkowy_1();
 	test_ModelARX_skokJednostkowy_2();
 	test_ModelARX_skokJednostkowy_3();
+	test_ModelARX_student_BS();
 }
 
 #endif

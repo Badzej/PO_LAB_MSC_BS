@@ -6,11 +6,12 @@
 #include <numeric>
 #include <random>
 #include "ObiektSISO.h"
+#include "json.hpp"
+#include <fstream>
 
 
 
-
-//TODO: Serializacja, Podział na plik naglowkowy, Komentarze dla Doxygen
+//TODO: Podział na plik naglowkowy, Komentarze dla Doxygen
 
 class Wielomian{
 private:
@@ -24,6 +25,7 @@ public:
     }
 
     [[nodiscard]] size_t rozmiar() const { return wsp.size(); }
+    [[nodiscard]] std::vector<double> get_wsp() const { return wsp; }
 };
 
 class ModelARX : public ObiektSISO
@@ -45,11 +47,13 @@ class ModelARX : public ObiektSISO
 
     public:
         //Konstruktor glowny
-        ModelARX(const std::vector<double>& a, const std::vector<double>& b, int opoznienie, double moc) : A(a), B(b), k(opoznienie), sigma(moc)
+        ModelARX(const std::vector<double>& a, const std::vector<double>& b, unsigned int opoznienie, double moc) : A(a), B(b), k(opoznienie), sigma(moc)
         {
           u_hist.resize(b.size() + k, 0.0);
           y_hist.resize(a.size(), 0.0);
         }
+        //Konstruktor deserializujacy
+        explicit ModelARX(const std::string& sciezka) : ModelARX(deserializuj(sciezka)) {};
 
         double symuluj(double u) override{
             u_hist.push_front(u);
@@ -61,5 +65,31 @@ class ModelARX : public ObiektSISO
             y_hist.push_front(wyjscie);
             if (y_hist.size() > A.rozmiar()) y_hist.pop_back();
             return wyjscie;
+        }
+        void serializuj(const std::string& sciezka) const {
+            nlohmann::json json_obj;
+            json_obj["A"] = A.get_wsp();
+            json_obj["B"] = B.get_wsp();
+            json_obj["k"] = k;
+            json_obj["sigma"] = sigma;
+
+            //Zapis w pliku
+            std::ofstream plik(sciezka);
+            plik << json_obj.dump(4); // 4 oznacza formatowanie z 4 spacjam
+            plik.close();
+        }
+
+        static ModelARX deserializuj(const std::string& sciezka) {
+                std::ifstream plik(sciezka);
+                nlohmann::json json_obj;
+                plik >> json_obj;
+                plik.close();
+
+                std::vector<double> a = json_obj["A"].get<std::vector<double>>();
+                std::vector<double> b = json_obj["B"].get<std::vector<double>>();
+                unsigned int k = json_obj["k"].get<unsigned int>();
+                double sigma = json_obj["sigma"].get<double>();
+
+                return ModelARX(a, b, k, sigma);
         }
 };
