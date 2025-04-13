@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include "ModelARX.cpp"
+#include "ModelARX.h"
 
 #define DEBUG  // ustaw na MAIN aby skompilować program docelowy / ustaw na DEBUG aby skompilować program testujacy 
 
