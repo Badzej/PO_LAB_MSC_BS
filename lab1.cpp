@@ -165,7 +165,7 @@ void test_ModelARX_skokJednostkowy_3()
 
 		// Weryfikacja poprawności i raport:
 		if (porownanieSekwencji(spodzSygWy, faktSygWy)) {
-			instancjaTestowa.serializuj("deserial_test\\t.json"); // Test serializacji do pliku t.json
+			instancjaTestowa.serializuj("test.json"); // Test serializacji do pliku t.json
 			std::cerr << "OK!\n";
 		}
 		else
@@ -179,14 +179,14 @@ void test_ModelARX_skokJednostkowy_3()
 		std::cerr << "INTERUPTED! (niespodziwany wyjatek)\n";
 	}
 }
-
+//Test deserializacji obiektu z utworzonego w tescie nr 3 pliku json i operacji na nim
 void test_ModelARX_student_BS()
 {
 	//Sygnatura testu:
 	std::cerr << "BS ModelARX (-0.4, 0.2 | 0.6, 0.3 | 2 | 0 ) -> test skoku jednostkowego nr 3: ";
 	try {
 		// Przygotowanie danych:
-		ModelARX instancjaTestowa("deserial_test\\t.json");
+		ModelARX instancjaTestowa("test.json");
 		constexpr size_t LICZ_ITER = 30;
 		std::vector<double> sygWe(LICZ_ITER);      // pobudzenie modelu,
 		std::vector<double> spodzSygWy(LICZ_ITER); // spodziewana sekwencja wy
