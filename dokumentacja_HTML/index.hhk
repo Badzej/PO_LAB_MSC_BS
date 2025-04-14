@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#ac3fcb91d57ea7839208ee217700802d6"><param name="Name" value="deserializuj(const std::string &amp;sciezka)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html#a7e4ea8ad29570f0958be8be52413116a"><param name="Name" value="get_wsp() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html"><param name="Name" value="ModelARX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#a7af9401c31d197b5c5c536fa6d2c7e27"><param name="Name" value="ModelARX(const std::string &amp;sciezka)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#adaaaf56ce5cdbc0709e12af62eed3ed2"><param name="Name" value="ModelARX(const std::vector&lt; double &gt; &amp;a, const std::vector&lt; double &gt; &amp;b, unsigned int opoznienie, double moc)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html"><param name="Name" value="ModelARX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#ac3fcb91d57ea7839208ee217700802d6"><param name="Name" value="deserializuj(const std::string &amp;sciezka)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html"><param name="Name" value="ModelARX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#a7af9401c31d197b5c5c536fa6d2c7e27"><param name="Name" value="ModelARX(const std::string &amp;sciezka)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html"><param name="Name" value="ModelARX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#adaaaf56ce5cdbc0709e12af62eed3ed2"><param name="Name" value="ModelARX(const std::vector&lt; double &gt; &amp;a, const std::vector&lt; double &gt; &amp;b, unsigned int opoznienie, double moc)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html"><param name="Name" value="ModelARX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#abf69733bb387c083dfaf693abc322723"><param name="Name" value="serializuj(const std::string &amp;sciezka) const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html"><param name="Name" value="ModelARX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#a2bf5d466e1ccf49bc6cae2bbc236770e"><param name="Name" value="symuluj(double u) override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_obiekt_s_i_s_o.html"><param name="Name" value="ObiektSISO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_obiekt_s_i_s_o.html"><param name="Name" value="ObiektSISO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_obiekt_s_i_s_o.html#afaa0de278c2cafa27902026a01537809"><param name="Name" value="symuluj(double u)=0"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html#ade2f478d49b2dc75155891d7c55e7a26"><param name="Name" value="oblicz(const std::deque&lt; double &gt; &amp;poprzednie_wartosci) const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html#a47d17a01c657f0596cfdcb18be1e3a07"><param name="Name" value="rozmiar() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#abf69733bb387c083dfaf693abc322723"><param name="Name" value="serializuj(const std::string &amp;sciezka) const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_model_a_r_x.html#a2bf5d466e1ccf49bc6cae2bbc236770e"><param name="Name" value="symuluj(double u) override"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_obiekt_s_i_s_o.html#afaa0de278c2cafa27902026a01537809"><param name="Name" value="symuluj(double u)=0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html"><param name="Name" value="Wielomian"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html#a8f26a9d507d9288b68083558c78738ba"><param name="Name" value="Wielomian(const std::vector&lt; double &gt; &amp;wspolczynniki)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html"><param name="Name" value="Wielomian"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html#a7e4ea8ad29570f0958be8be52413116a"><param name="Name" value="get_wsp() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html"><param name="Name" value="Wielomian"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html#ade2f478d49b2dc75155891d7c55e7a26"><param name="Name" value="oblicz(const std::deque&lt; double &gt; &amp;poprzednie_wartosci) const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html"><param name="Name" value="Wielomian"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html#a47d17a01c657f0596cfdcb18be1e3a07"><param name="Name" value="rozmiar() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html"><param name="Name" value="Wielomian"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wielomian.html#a8f26a9d507d9288b68083558c78738ba"><param name="Name" value="Wielomian(const std::vector&lt; double &gt; &amp;wspolczynniki)"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>
