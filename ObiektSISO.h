@@ -1,7 +1,8 @@
 #pragma once
 /**
+ * @author Błażej Styrnol
  * @class ObiektSISO
- * Wirtualna klasa interfejsu o jednym wejściu i jednym wyjściu (Single Input Single Output)
+ * @brief Wirtualna klasa interfejsu o jednym wejściu i jednym wyjściu (Single Input Single Output)
  */
 class ObiektSISO
 {

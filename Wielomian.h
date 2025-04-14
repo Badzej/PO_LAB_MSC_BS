@@ -3,6 +3,7 @@
 #include <queue>
 #include <numeric>
 /**
+ * @author Błażej Styrnol
  * @class Wielomian
  * @brief Reprezentuje wielomian wykorzystywany w modelu ARX
  */

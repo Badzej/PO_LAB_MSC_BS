@@ -9,6 +9,7 @@
 #include "Wielomian.h"
 
 /**
+ * @author Błażej Styrnol
  * @class ModelARX
  * @brief Implementacja dyskretnego modelu ARX
  */

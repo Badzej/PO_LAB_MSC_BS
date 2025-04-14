@@ -32,9 +32,8 @@ void ModelARX::serializuj(const std::string& sciezka) const {
     json_obj["k"] = k;
     json_obj["sigma"] = sigma;
 
-    //Zapis w pliku
     std::ofstream plik(sciezka);
-    plik << json_obj.dump(4); // 4 oznacza formatowanie z 4 spacjami
+    plik << json_obj.dump(4); //. 4 oznacza formatowanie z 4 spacjami
     plik.close();
 }
 
